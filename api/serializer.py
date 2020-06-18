@@ -9,7 +9,7 @@ class ManufacturerSerializer(HyperlinkedModelSerializer):
 class ShoeSerializer(HyperlinkedModelSerializer):
     class Meta:
         model = Shoe
-        fields = [
+        fields = (
             'size',
             'brand_name',
             'manufacturer',
@@ -17,7 +17,7 @@ class ShoeSerializer(HyperlinkedModelSerializer):
             'material',
             'shoe_type',
             'fasten_type'
-        ]
+        )
 
 class ShoeTypeSerializer(HyperlinkedModelSerializer):
     class Meta:
