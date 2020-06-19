@@ -5,6 +5,9 @@ class Manufacturer(models.Model):
     name = models.CharField(max_length=50)
     website = models.URLField(max_length = 200)
 
+    def __str__(self):
+        return self.name
+
 
 class ShoeType(models.Model):
     style = models.CharField(max_length=30)
@@ -36,6 +39,7 @@ class ShoeColor(models.Model):
 
 
 class Shoe(models.Model):
+    name = models.CharField(max_length=50, default="unknown")
     size = models.IntegerField()
     brand_name = models.CharField(max_length=30)
     manufacturer = models.ForeignKey(Manufacturer, on_delete=models.CASCADE)

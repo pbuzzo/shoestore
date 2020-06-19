@@ -10,6 +10,7 @@ class ShoeSerializer(HyperlinkedModelSerializer):
     class Meta:
         model = Shoe
         fields = (
+            'name',
             'size',
             'brand_name',
             'manufacturer',

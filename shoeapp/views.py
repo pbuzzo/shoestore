@@ -20,6 +20,7 @@ class AddShoe(View):
         if form.is_valid():
             data = form.cleaned_data
             Shoe.objects.create(
+                name=data['name'],
                 size=data['size'],
                 brand_name=data['brand_name'],
                 manufacturer=data['manufacturer'],

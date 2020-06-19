@@ -12,6 +12,7 @@ class ShoeAddForm(forms.ModelForm):
     class Meta:
         model = Shoe
         fields = (
+            'name',
             'size',
             'brand_name',
             'manufacturer',
