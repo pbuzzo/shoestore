@@ -1,6 +1,6 @@
 # shoestore
 
-Link to backend: 
+Link to backend: https://github.com/pbuzzo/shoestore_frontend
 
 Resources:
 - https://docs.djangoproject.com/en/3.0/ref/models/fields/#choices

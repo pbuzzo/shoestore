@@ -29,7 +29,7 @@ class Command(BaseCommand):
         )
         for color in shoe_colors:
             ShoeColor.objects.create(
-                color = color
+                shoe_color = color
             )
 
 # Fun Fact: Joe often was referred to as the "fastest man alive," 
